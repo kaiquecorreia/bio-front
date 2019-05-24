@@ -6,13 +6,13 @@ import rootSagas from './sagas';
 
 const middlewares = [];
 
-const sagaMonitor = process.env.NODE_ENV === 'development' ? console.tron.createSagaMonitor() : null;
+const sagaMonitor = null;
 
 const sagaMiddleware = createSagaMiddleware({ sagaMonitor });
 
 middlewares.push(sagaMiddleware);
 
-const tronMiddleware = process.env.NODE_ENV === 'development' ? console.tron.createEnhancer : () => {};
+const tronMiddleware = () => {};
 
 const store = createStore(
   rootReducers,

@@ -6,7 +6,16 @@ Verificar se o backend da aplicação está rodando está rodando
 
 Acessar pasta services e editar o arquivo api
 
+```
 baseURL:'local-onde-seu-backend-está-rodando'
+```
+
+para testar a aplicaçãpo backend em um serviro remoto
+segue o link de um servidor remoto com deploy na plataforma Heroku
+
+```
+baseURL: `https://biototal-backend.herokuapp.com`
+```
 
 abrir a pasta do projeto no terminal
 
